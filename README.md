@@ -1,10 +1,14 @@
-# mcp-test
+# mcp-pytest
 
 pytest integration and CLI for testing MCP servers.
 
+[![PyPI](https://img.shields.io/pypi/v/mcp-pytest)](https://pypi.org/project/mcp-pytest/)
+
 ```bash
-pip install mcp-test
+pip install mcp-pytest
 ```
+
+> After installing, the CLI command is `mcp-test`. The Python import is `from mcp_test import MCPClient`.
 
 No other MCP testing tools exist. If you're building a Python MCP server, you need this.
 
@@ -108,7 +112,7 @@ with MCPClient(["python", "server.py"]) as server:
 
 ## Works With Any MCP Framework
 
-mcp-test speaks the [MCP stdio transport protocol](https://modelcontextprotocol.io/docs/concepts/transports) directly. Works with:
+mcp-pytest speaks the [MCP stdio transport protocol](https://modelcontextprotocol.io/docs/concepts/transports) directly. Works with:
 - FastMCP
 - The official `mcp` Python SDK
 - Any server that implements MCP stdio transport
