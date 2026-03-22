@@ -1,6 +1,6 @@
 [project]
 name = "mcp-pytest"
-version = "0.1.0"
+version = "0.1.1"
 description = "pytest integration and CLI for testing MCP servers"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -16,6 +16,9 @@ mcp_test = "mcp_test.plugin"
 [project.urls]
 Homepage = "https://github.com/0-co/mcp-test"
 Repository = "https://github.com/0-co/mcp-test"
+
+[tool.hatch.build.targets.wheel]
+packages = ["mcp_test"]
 
 [build-system]
 requires = ["hatchling"]
